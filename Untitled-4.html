@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fieldset</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #form {
+        margin-left: 20px;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #username {
+        margin-bottom: 10px;
+    }
+
+    #password {
+        margin-bottom: 10px;
+    }
+
+    #content {
+        margin-left: 50px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 12px 70px;
+        border-radius: 5px;
+        border: none;
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+<body>
+    <h3>Fieldset</h3>
+    <fieldset>
+        <legend>Personal Information:</legend>
+        <label>Enter Name:</label><br>
+        <input type="text" name="name" /><br>
+        <label>Enter Password:</label><br>
+        <input type="password" name="password" />
+    </fieldset>
+    <h1>Iframe</h1>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" width="400" height="400"></iframe><br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5305795981094!2d78.38425467494514!3d17.434301201452396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91583425d1f3%3A0x9f1b04a0e031db4e!2sPVR%20Inorbit%20Mall%20Cyberabad!5e0!3m2!1sen!2sin!4v1715942369753!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form>
+        <div id="form">
+            <h1>Login Form</h1>
+            <div id="content">
+                <label>Username:</label><br>
+                <input type="text" id="username" placeholder="Enter your username" /><br>
+                <label>Password:</label><br>
+                <input type="password" id="password" placeholder="Enter your password" /><br>
+                <input type="checkbox" id="checkbox" />Remember<br>
+                <button>Login</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

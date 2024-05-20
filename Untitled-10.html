@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Lora", serif;
+    }
+
+    header {
+        background-color: lightseagreen;
+        padding: 35px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    nav {
+        float: left;
+        width: 30%;
+        height: 440px;
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: lightgreen;
+        height: 440px;
+    }
+
+    section::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    footer {
+        background-color: lightcyan;
+        padding: 10px;
+        text-align: center;
+    }
+
+    @media(max-width: 600px) {
+
+        nav,
+        article {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <h1>HTML Layout</h1>
+    <h2>Header part</h2>
+    <p>React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.
+        Because React is only concerned with the user interface and rendering components to the DOM, React applications
+        often rely on libraries for routing and other client-side functionality</p>
+    <header>
+        <h2>React page</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Support </a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>React Basic</h1>
+            <p>React can be used to develop single-page, mobile, or server-rendered applications with frameworks like
+                Next.js. Because React is only concerned with the user interface and rendering components to the DOM,
+                React applications often rely on libraries for routing and other client-side functionality</p>
+            <p>React can be used to develop single-page, mobile, or server-rendered applications with frameworks like
+                Next.js. Because React is only concerned with the user interface and rendering components to the DOM,
+                React applications often rely on libraries for routing and other client-side functionality</p>
+        </article>
+    </section>
+    <footer>
+        <p>React page</p>
+    </footer>
+</body>
+
+</html>

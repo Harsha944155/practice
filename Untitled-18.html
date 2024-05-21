@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        #margin {
+            width: 170px;
+            background-color: lightseagreen;
+            border: 3px solid black;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+
+        h3 {
+            margin: 0 0 50px 0;
+        }
+
+        h4 {
+            margin: 20px 0 0 0;
+        }
+
+        #header {
+            display: flex;
+            gap: 23px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            font-size: 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h6 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: -40px;
+        }
+
+        .box {
+            border: 1.5px solid #E4E8EE;
+            padding: 15px 20px;
+            padding-left: 25px;
+            border-radius: 20px;
+        }
+
+        img {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Borders</h1>
+    <p style="border:dotted; border-width: 4px; border-color: red;">Dotted border</p>
+    <p style="border:dashed; border-width: 5px 10px 20px 30px; border-color: blue green orange yellow ;">Dashed border
+    </p>
+    <p style="border:solid; border-width: 3px 6px 10px; border-color: green orange yellow;">Solid border</p>
+    <p style="border-top-style: double; border-right-style:solid; border-bottom-style:dashed; border-left-style:dotted">
+        Double border</p>
+    <p style="border:3px solid green; border-radius: 4px 8px 12px 16px;">Groove border</p>
+    <p style="border:ridge">Ridge border</p>
+    <p style="border:inset">Inside border</p>
+    <p style="border:outset">Outset border</p>
+    <p style="border:hidden">Hidden border</p>
+    <p style="border:none">None border</p>
+    <h2>Margins</h2>
+    <div id="margin">
+        To create space around elements, outside the borders.To create space around elements, outside the borders.
+    </div>
+    <h3>Margins</h3>
+    <h4>Margins</h4>
+
+    <div>
+        <h5>We are best in?</h5>
+    </div>
+    <div id="header">
+        <div class="box">
+            <img src="https://deuexsolutions.com/ad-landing-page/images/icon-best-01.svg" width="100px" ,
+                height="100px">
+            <h6>Designing UX</h6>
+            <p class="content">After a thorough discussion with the<br> client, our Designers research and<br> come up
+                with designs to provide the<br>
+                best experience for end-users.</p>
+        </div>
+        <div class="box">
+            <img src="https://deuexsolutions.com/ad-landing-page/images/icon-best-02.svg" width="100px" ,
+                height="100px">
+            <h6>Developing App</h6>
+            <p class="content">Our talented and pragmatic Developers<br> build a robust and secure product with<br> the
+                latest cutting edge
+                technologies.</p>
+        </div>
+        <div class="box">
+            <img src="https://deuexsolutions.com/ad-landing-page/images/icon-best-03.svg" width="100px" ,
+                height="100px">
+            <h6>Delivering Products</h6>
+            <p class="content">Our Quality Assurance team assesses<br> the product to ensure that we not only<br>
+                deliver on time, but also enhance
+                user<br> experience and meet client<br> expectations.</p>
+        </div>
+    </div>
+</body>
+
+</html>

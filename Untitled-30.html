@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+        body {
+            font-family: "Dancing Script", cursive;
+            ;
+        }
+
+        h1 {
+            text-shadow: 0px 0px 4px red, 0 0 4px blue, 1px 2px 8px green;
+        }
+
+        h2 {
+            font-family: "Dancing Script", cursive;
+            font-size: 40px;
+            font-weight: 800;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+
+        .anchor {
+            color: white;
+            text-decoration: none;
+            background-color: orange;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .anchor:hover {
+            background-color: lightseagreen;
+        }
+
+        .dropbtn {
+            background-color: lightcoral;
+            color: lightgreen;
+            padding: 18px;
+            font-size: 20px;
+            border: 3px solid skyblue;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .items {
+            position: absolute;
+            background-color: lightseagreen;
+            width: 180px;
+            box-shadow: 0 8px 18px lightpink;
+            z-index: 1;
+            display: none;
+        }
+
+        .items a {
+            color: black;
+            padding: 14px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .items a:hover {
+            background-color: lightsalmon;
+        }
+
+        .dropdown:hover .items {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Text-shadow</h1>
+        <h2>Coding font</h2>
+        <code>
+        public class harsha{<br>
+            public static void main(String[]args){
+                <br>
+                System.out.print("Web development");
+                <br>
+            }
+        }
+    </code>
+    </div>
+    <div>
+        <h3>CSS LINKS</h3>
+        <div>
+            <a class="anchor" href="https://fonts.google.com/selection/embed">Google fonts</a>
+        </div>
+    </div>
+    <br>
+    <div>
+        <h4>Drop-down</h4>
+        <div class="dropdown">
+            <button class="dropbtn">Languages</button>
+            <div class="items">
+                <a href="#">Telugu</a>
+                <a href="#">Hindi</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Blog</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #second-div {
+            text-align: center;
+        }
+
+        #blog {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-left: 120px;
+            background-color: #F5F4F0;
+            position: relative;
+            bottom: 55px;
+        }
+
+        .circle:hover {
+            background-color: #95ADBE;
+            cursor: pointer;
+        }
+
+        .circle:hover .date {
+            color: #fff;
+        }
+
+        .date {
+            color: #95ADBE;
+            padding-top: 12px;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .day {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .year {
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #D3D3CF;
+        }
+        h4{
+            margin-top: -45px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 50px;
+            color: #FF7A5C;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: 200;
+        }
+
+        h3 {
+            font-size: 49px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .down-para {
+            line-height: 2;
+            margin-bottom: 10px;
+            color: #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="second-div">
+        <div>
+            <h2>BLOG</h2>
+            <h3>Recent Blog</h3>
+        </div>
+        <div id="blog">
+            <div>
+                <img src="https://preview.colorlib.com/theme/publishingcompany/images/image_1.jpg.webp" width="350px"
+                    height="250px"><br>
+                <div class="circle">
+                    <p class="date">02</p>
+                    <p class="day">MAY</p>
+                    <p class="year">2020</p>
+                </div>
+                <h4>New Friends With Books</h4>
+                <p class="down-para">A small river named Duden flows by their<br> place and supplies it with the necessary<br> regelialia.
+                </p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/publishingcompany/images/image_2.jpg.webp" width="350px"
+                    height="250px"><br>
+                <div class="circle">
+                    <p class="date">02</p>
+                    <p class="day">MAY</p>
+                    <p class="year">2020</p>
+                </div>
+                <h4>New Friends With Books</h4>
+                <p class="down-para">A small river named Duden flows by their<br> place and supplies it with the necessary<br> regelialia.
+                </p>
+            </div>
+            <div>
+                <img src="https://preview.colorlib.com/theme/publishingcompany/images/image_3.jpg.webp" width="350px"
+                    height="250px"><br>
+                <div class="circle">
+                    <p class="date">02</p>
+                    <p class="day">MAY</p>
+                    <p class="year">2020</p>
+                </div>
+                <h4>New Friends With Books</h4>
+                <p class="down-para">A small river named Duden flows by their<br> place and supplies it with the necessary<br> regelialia.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

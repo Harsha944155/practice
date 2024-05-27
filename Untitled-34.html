@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            height: 45px;
+        }
+
+        header nav ul {
+            display: flex;
+            margin-left: 70%;
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            padding-left: 10%;
+        }
+
+        header a {
+            text-decoration: none;
+            color: brown;
+        }
+
+        section {
+            height: 80vh;
+            border: 2px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 10%;
+        }
+
+        .container img {
+            border-radius: 50%;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .container h2 {
+            margin-top: 3%;
+            font-size: 3em;
+            position: relative;
+            bottom: 50px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .container p,
+        ul {
+            margin-top: 2%;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            line-height: 40px;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+
+        #intro {
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #about {
+            background-color: bisque;
+            padding-left: 50px;
+        }
+
+        #contact {
+            background-color: lightcyan;
+            justify-content: left;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="container">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    width="300px" , height="300px" alt="dog image" />
+                <h2>Pet Care Center</h2>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>At Vetcare Pet hospital our goal is to build lasting relationships with our patients so that we can
+                    come to know their special and individual needs, and they can come to know us and trust us in our
+                    care and handling.</p>
+                <ul>
+                    <li>Pet food</li>
+                    <li>emergency services</li>
+                    <li>Pup Care Advice</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Visit us at: Madhapur, Hyderabad</p>
+                <ul>
+                    <li>Email: petacre2gmail.com</li>
+                    <li>Follow us at:</li>
+                    <li>pet_care</li>
+                    <li>pet care</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Copyright 202 2 Pet Care Center</p>
+    </footer>
+</body>
+
+</html>

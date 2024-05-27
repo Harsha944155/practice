@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        #jerry {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+        .two {
+            position: relative;
+        }
+
+        .two1 {
+            position: relative;
+            z-index: 1;
+            border: 5px solid black;
+            height: 100px;
+            width: 200px;
+        }
+
+        .two2 {
+            position: absolute;
+            z-index: 3;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+        }
+
+        img {
+            float: left;
+        }
+
+        .three {
+            float: left;
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .four {
+            border: 5px solid brown;
+        }
+
+        .five {
+            float: left;
+            padding: 20px;
+            border: 3px solid orange;
+        }
+
+        .six {
+            padding: 20px;
+            border: 5px solid yellow;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Z-index</h1>
+        <div class="one">
+            <img src="https://i.pinimg.com/736x/dd/22/35/dd223592a3db79a6d26761d247e8c7de.jpg" id="jerry" width="200px"
+                , height="200px" alt="jerry">
+            <p> This is jerry belongs to cartoon show. And my bestfriend name is tom. He has another friend dog</p>
+        </div>
+        <br><br><br>
+        <br>
+        <br>
+        <br>
+        <div class="two">
+            <div class="two1">absolute position z-index.absolute position z-indexabsolute position z-indexabsolute
+                position
+                z-indexabsolute position z-indexabsolute position z-indexabsolute position z-indexabsolute position
+                z-indexabsolute position z-indexabsolute position z-index</div>
+            <div class="two2">relative position z-index</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <h2>Float</h2>
+        <p><img src="https://m.media-amazon.com/images/I/71e8gbL7z7L.jpg" width="300px" , height="300px" alt="bear">
+            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual
+            form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
+            placeholder before the final copy is available.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1>Without clear</h1>
+        <div class="three">without clear</div>
+        <div class="four">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+            demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum
+            may be used as a placeholder before the final copy is available.</div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <h2>With clear</h2>
+        <div class="five">without clear</div>
+        <div class="six">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
+            demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum
+            may be used as a placeholder before the final copy is available.</div>
+    </div>
+</body>
+
+</html>

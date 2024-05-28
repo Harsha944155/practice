@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Member Dashboard</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+
+        #table {
+            border-collapse: collapse;
+            border: 2px solid #d5e4f0;
+            border-right: #d5e4f0;
+            font-size: 20px;
+        }
+
+        th,
+        td {
+            margin: 1px;
+            padding: 21.45px;
+            text-align: left;
+            border-bottom: 1px solid #d5e4f0;
+        }
+
+        th {
+            font-weight: 700;
+        }
+
+        button {
+            background-color: #E7F1F9;
+            border-radius: 6px;
+            padding: 10px 10px;
+            border: none;
+            color: #1074C2;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .gray {
+            color: gray;
+            font-size: 12px;
+        }
+
+        .dot {
+            padding: 4px;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #color {
+            background-color: green;
+        }
+
+        #circle {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+
+        #nav-list {
+            margin: 10px;
+            margin-top: 5px;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+            padding: 20px;
+            height: 60px;
+        }
+
+        .num {
+            color: #fff;
+            font-size: 35px;
+            padding: 10px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .txt {
+            font-size: 22px;
+            font-weight: 600;
+            margin: auto;
+            color: #fff;
+
+        }
+
+        #box1 {
+            background-color: #2ac7b8;
+        }
+
+        #box2 {
+            background-color: #a053f2;
+        }
+
+        #box3 {
+            background-color: #6da5f6;
+        }
+
+        #box4 {
+            background-color: #FFB32C;
+        }
+
+        #template {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        #top-list {
+            background: #d5e4f0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .search {
+            display: inline-block;
+        }
+
+        #doc {
+            margin-right: 713px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #export {
+            font-size: 16px;
+            padding: 5px 15px;
+            margin-right: 50px;
+            background-color: #1074C2;
+            color: #fff;
+            border-radius: 0%;
+            font-weight: 100;
+        }
+
+        #arjun {
+            font-size: 18px;
+            padding: 5px 25px;
+            background-color: #1074C2;
+            color: #fff;
+            border-radius: 0%;
+            font-weight: 100;
+        }
+
+        #space {
+            margin-left: 5px;
+        }
+
+        td>p {
+            margin-bottom: 10px;
+        }
+
+        #head {
+            margin-left: 20px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .down {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="head">Team Member Dashboard</h1>
+        <div id="nav-list">
+            <div class="box" id="box1"><span class="num">106</span><span class="txt">Documents Sent</span></div>
+            <div class="box" id="box2"><span class="num">13</span><span class="txt">Documents Viewed</span></div>
+            <div class="box" id="box3"><span class="num">30</span><span class="txt">Documents Expiring</span></div>
+            <div class="box" id="box4"><span class="num">59</span><span class="txt">Documents Signed</span></div>
+        </div>
+    </div>
+
+    <div id="template">
+        <div id="top-list">
+            <h2 class="search" id="doc">Document Sent Details</h2>
+            <button class="search" id="export">EXPORT</button>
+            <button class="search" id="arjun">Arjun Makwana</button>
+        </div>
+
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Recipient Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Sent Date</th>
+                        <th>Last Action Taken</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray"><span>Donald Randolph</span></p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="color" class="dot"></span><span> Complete</span></td>
+                        <td id="down">
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="circle" class="dot"></span><span> Expired</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="blue" class="dot"></span><span> Pending</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="yellow" class="dot"></span><span> Viewed</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="color" class="dot"></span><span> Complete</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="circle" class="dot"></span><span> Expired</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="color" class="dot"></span><span> Complete</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="down">Patty O Furniture doc</p>
+                            <p class="gray">Donald Randolph</p>
+
+                        </td>
+                        <td>Carolyn Leblanc</td>
+                        <td>carolynleblanc.com</td>
+                        <td><span id="circle" class="dot"></span><span> Expired</span></td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td>
+                            <p class="down">11/14/2019</p>
+                            <p id="space" class="gray">040944pm</p>
+                        </td>
+                        <td><button>ACTIONS</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

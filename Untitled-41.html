@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        p i:first-child {
+            color: red;
+            font-variant: small-caps;
+        }
+
+        p::first-line {
+            color: blue;
+            font-size: 20px;
+        }
+
+        p:first-letter {
+            text-transform: capitalize;
+            color: red;
+            font-size: 30px;
+            font-weight: 600;
+            background-color: yellow;
+            padding: 4px;
+            margin: 10px;
+            text-decoration: underline;
+            float: left;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+
+        h1::after {
+            content: url('https://img.freepik.com/free-vector/cute-koala-with-cub-cartoon-icon-illustration_138676-2839.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1716854400&semt=sph');
+        }
+
+        ::marker {
+            color: blue;
+            font-size: 20px;
+        }
+
+        h2::selection {
+            color: skyblue;
+            background-color: pink;
+        }
+
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>First-child</h1>
+    <p>this is <i>one</i> the para for styling the pseudo classes. this is <i>one</i> the para for styling the pseudo
+        classes. this is <i>one</i> the para for styling the pseudo classes. this is <i>one</i> the para for styling the
+        pseudo classes. this is <i>one</i> the para for styling the pseudo classes</p>
+    <p>this is the para for <i>styling</i> the pseudo classes. this is <i>one</i> the para for styling the pseudo
+        classes. this is <i>one</i> the para for styling the pseudo classes. this is <i>one</i> the para for styling the
+        pseudo classes. this is <i>one</i> the para for styling the pseudo classes</p>
+    <div>
+        <p>this is the para for styling the <i>pseudo</i> classes. this is <i>one</i> the para for styling the pseudo
+            classes. this is <i>one</i> the para for styling the pseudo classes. this is <i>one</i> the para for styling
+            the pseudo classes. this is <i>one</i> the para for styling the pseudo classes</p>
+        <p>this is the para for styling the <i>pseudo</i> classes. this is <i>one</i> the para for styling the pseudo
+            classes. this is <i>one</i> the para for styling the pseudo classes. this is <i>one</i> the para for styling
+            the pseudo classes. this is <i>one</i> the para for styling the pseudo classes</p>
+    </div>
+    <br>
+    <h2>List items</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Samsung</li>
+        <li>Redmi</li>
+        <li>Vivo</li>
+        <li>Oppo</li>
+        <li>Oneplus</li>
+    </ul>
+    <br>
+    <ol>
+        <li>Lenovo</li>
+        <li>Samsung</li>
+        <li>Dell</li>
+        <li>Apple</li>
+        <li>Asus</li>
+        <li>Surface</li>
+    </ol>
+    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjY4Ni0yODUtcC5wbmc.png"
+        width="200px">
+</body>
+
+</html>

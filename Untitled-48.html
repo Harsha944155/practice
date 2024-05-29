@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: skyblue;
+        }
+
+        .container>div {
+            background-color: orange;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        #second-div p {
+            background-color: blue;
+        }
+
+        #second-div+p {
+            background-color: green;
+        }
+
+        #second-div~p {
+            background-color: aqua;
+        }
+
+        #click {
+            background-color: orange;
+            color: white;
+            padding: 20px 40px;
+            width: 150px;
+            height: 60px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .list {
+            background-color: aqua;
+            padding: 10px 30px;
+            width: 100px;
+        }
+
+        .list li:hover {
+            background-color: green;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px 20px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex-box</h1>
+    <div class="container">
+        <div>Harsha</div>
+        <div>Vardhan</div>
+        <div>Reddy</div>
+        <div>Pidapa</div>
+    </div>
+    <div>
+        <h1>Combinators</h1>
+        <h2>Desendant selectors</h2>
+        <p>Normal paragraph</p>
+        <p>Normal paragraph</p>
+        <div id="second-div">
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <section>Paragraph 4</section>
+            <p>Paragraph 5</p>
+        </div>
+        <p>Normal paragraph</p>
+        <p>Normal paragraph</p>
+        <div id="second-div">
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <section>Paragraph 4</section>
+            <p>Paragraph 5</p>
+        </div>
+        <p>Normal paragraph</p>
+        <p>Normal paragraph</p>
+        <div id="second-div">
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <section>Paragraph 4</section>
+            <p>Paragraph 5</p>
+        </div>
+        <p>Normal paragraph</p>
+        <p>Normal paragraph</p>
+        <div id="second-div">
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <p>Paragraph</p>
+            <section>Paragraph 4</section>
+            <p>Paragraph 5</p>
+        </div>
+        <p>Normal paragraph</p>
+        <p>Normal paragraph</p>
+    </div>
+    <div>
+        <h1>Hover option</h1>
+        <div id=last-div>
+            <button id="click">Click me!</button>
+            <ul class="list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

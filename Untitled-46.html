@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            box-shadow: 8px 8px 5px blue, 15px 15px green, 20px 20px brown;
+            text-overflow: clip;
+            overflow: hidden;
+            word-wrap: break-word;
+            writing-mode: horizontal-tb;
+            word-break: keep-all;
+        }
+
+        h1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 2px solid red;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #linear {
+            background: repeating-linear-gradient(to bottom right, pink, skyblue 10%, yellow 20%);
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        #radial {
+            background: repeating-radial-gradient(green 5%, blue 20%, brown 40%);
+        }
+
+        #conic {
+            background-image: conic-gradient(pink 45deg, skyblue 90deg, green 210deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gradient transition between two different colors here they are three linear, conic, radial gradients</h1>
+    <div>
+        <p>React (also known as React.js or ReactJS) is a free and open-source harsha vardhan reddy
+            jadghajsghajhasgagaadgagdjjjjjjjjjjjjjjjjjjjjjj front-end JavaScript library[4][5] for building user
+            interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual
+            developers and companies. React (also known as React.js or ReactJS) is a free and open-source front-end
+            JavaScript library[4][5] for building user interfaces based on components. It is maintained by Meta
+            (formerly Facebook) and a community of individual developers and companies</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Linear Gradient</h3>
+    <div id="linear">
+        <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[4][5] for
+            building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community
+            of individual developers and companies. React (also known as React.js or ReactJS) is a free and open-source
+            front-end JavaScript library[4][5] for building user interfaces based on components. It is maintained by
+            Meta (formerly Facebook) and a community of individual developers and companies</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Radial Gradient</h3>
+    <div id="radial">
+        <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[4][5] for
+            building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community
+            of individual developers and companies. React (also known as React.js or ReactJS) is a free and open-source
+            front-end JavaScript library[4][5] for building user interfaces based on components. It is maintained by
+            Meta (formerly Facebook) and a community of individual developers and companies</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Conic gradient</h3>
+    <div id="conic">
+        <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[4][5] for
+            building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community
+            of individual developers and companies. React (also known as React.js or ReactJS) is a free and open-source
+            front-end JavaScript library[4][5] for building user interfaces based on components. It is maintained by
+            Meta (formerly Facebook) and a community of individual developers and companies</p>
+    </div>
+</body>
+
+</html>

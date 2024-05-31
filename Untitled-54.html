@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Global Company</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #about-company {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 180px;
+            border-bottom: 1px solid gray;
+        }
+
+        #image {
+            width: 100%;
+        }
+
+        #company-details {
+            width: 30%;
+            margin-top: 25px;
+        }
+
+        #company-details h1 {
+            font-size: 16.5px;
+            margin-left: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #company-details p {
+            color: #2C3345;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #company-details :nth-child(2) {
+            margin-left: -25px;
+        }
+
+        #company-details :nth-child(3) {
+            margin-left: 84px;
+            font-size: 10pt;
+        }
+
+        #company-details :nth-child(4) {
+            margin-left: 114px;
+            font-size: 10pt;
+        }
+
+        #company-details :nth-child(5) {
+            margin-left: 140px;
+            font-size: 10pt;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #DADFFC;
+            border-radius: 5px;
+            margin: 15px 0px;
+        }
+
+        #customer-details {
+            margin-left: 50px;
+            padding-right: 80px;
+            border-bottom: 1px solid gray;
+        }
+
+        #middle-divison {
+            margin-left: 50px;
+            padding-right: 80px;
+            margin-right: -10px;
+
+        }
+
+        .display-flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        .names {
+            width: 50%;
+        }
+
+        #margin-30 {
+            margin-right: 30px;
+        }
+
+        #half {
+            width: 50%;
+            margin-top: 30px;
+        }
+
+        #radio {
+            width: 1%;
+        }
+
+        #tabular-column {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            width: 55%;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        table input {
+            border: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #DADFFC;
+            margin: 1px;
+            padding: 10px 25px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: 600;
+        }
+
+        #inner-width {
+            width: 100%;
+        }
+
+        button {
+            background-color: #000;
+            border: none;
+            color: #fff;
+            padding: 15px 50px;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 6px;
+
+        }
+
+        #last-row {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .size {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #radio-font {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #cust-det {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 450;
+        }
+    </style>
+</head>
+
+<body style="width:99%">
+    <div id="about-company">
+        <div id="image">
+            <img src="https://www.jotform.com/uploads/ugurg/form_files/acmeglobal-black.63a05ef4d6c717.65188482.png"
+                width="25%" />
+        </div>
+        <div id="company-details">
+            <h1>ACME GLOBAL COMPANY</h1>
+            <p>123 Maple Street, Houston, TX, 77002</p>
+            <p>example@example.com</p>
+            <p>www.example.com</p>
+            <p>(123) 1234567</p>
+        </div>
+    </div>
+    <form>
+        <div id="customer-details">
+            <div id="cust-det">
+                CUSTOMER DETAILS:
+            </div>
+            <div>
+                <label class="size">Full Name*</label>
+                <div class="display-flex">
+                    <div class="names" , id="margin-30">
+                        <input placeholder="First Name" />
+                    </div>
+                    <div class="names">
+                        <input placeholder="Last Name" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="size">Address*</label>
+                <input placeholder="Street Address" />
+            </div>
+            <div>
+                <input placeholder="Street Address Line 2" />
+            </div>
+            <div class="display-flex">
+                <div class="names" , id="margin-30">
+                    <input placeholder="City" />
+                </div>
+                <div class="names">
+                    <input placeholder="State / Province" />
+                </div>
+            </div>
+            <div>
+                <input placeholder="Postal / Zip code" />
+            </div>
+            <div class="display-flex">
+                <div class="names" , id="margin-30">
+                    <label class="size">Phone Number*</label>
+                    <input placeholder="(000) 000-0000" style="margin-bottom: 40px;" />
+                </div>
+                <div class="names">
+                    <label class="size">E-mail</label>
+                    <input placeholder="ex: email@yahoo.com" />
+                </div>
+            </div>
+        </div>
+        <div id="middle-divison">
+            <div id="half">
+                <label class="size">How did you hear about us?*</label>
+                <select>
+                    <option>Please Select</option>
+                    <option>Newspaper</option>
+                    <option>Internet</option>
+                    <option>Magazine</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div>
+                <label class="size">Feedback about us:</label>
+                <textarea rows="10" cols="30"></textarea>
+            </div>
+            <div>
+                <label class="size">Suggestions if any for further improvement:</label>
+                <textarea rows="10" cols="30"></textarea>
+            </div>
+            <div>
+                <div id="radio-font">
+                    <label class="size">Will you be willing to recommend us?</label>
+                    <div>
+                        <input type="radio" name="choice-radio" id="radio" /><span> Yes</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="choice-radio" id="radio" /><span> No</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="choice-radio" id="radio" /><span> Maybe</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="size">Please give reference of any two people whom you feel:</label>
+                <div id="tabular-column">
+                    <table id="inner-width">
+                        <thead>
+                            <tr>
+                                <th>SL.NO</th>
+                                <th>Full Name</th>
+                                <th>Address</th>
+                                <th>Contact Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="text" style="margin-left: -16px;"></td>
+                                <td><input type="text" style="margin-left: -16px;"></td>
+                                <td><input type="number" style="margin-left: -16px;"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input type="text" style="margin-left: -16px;"></td>
+                                <td><input type="text" style="margin-left: -16px;"></td>
+                                <td><input type="number" style="margin-left: -16px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="last-row">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

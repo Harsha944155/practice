@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .container1 {
+            display: flex;
+            background-color: orange;
+            align-items: first baseline;
+            height: 300px;
+        }
+
+        .container1>div {
+            background-color: white;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+        }
+
+        .container2 {
+            display: flex;
+            background-color: Blue;
+        }
+
+        .container2>div {
+            background-color: white;
+            color: Black;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .container3 {
+            display: flex;
+            background-color: Blue;
+        }
+
+        .container3>div {
+            background-color: white;
+            color: Black;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .container4 {
+            display: flex;
+            background-color: Blue;
+            align-items: stretch;
+        }
+
+        .container4>div {
+            background-color: white;
+            color: Black;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .container5 {
+            display: flex;
+            background-color: Blue;
+            align-items: stretch;
+        }
+
+        .container5>div {
+            background-color: white;
+            color: Black;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .container6 {
+            display: flex;
+            background-color: Blue;
+            height: 300px;
+        }
+
+        .container6>div {
+            background-color: white;
+            color: Black;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            width: 70px;
+            text-align: center;
+            line-height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Align items</h1>
+    <div class="container1">
+        <div>Harsha</div>
+        <div>Vardhan</div>
+        <div>Reddy</div>
+        <div>Pidapa</div>
+    </div>
+    <hr>
+    <h1>Child elements</h1>
+    <h2>Order property</h2>
+    <div class="container2">
+        <div style="order: 5;">1</div>
+        <div style="order: 3;">2</div>
+        <div style="order: 4;">3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <hr>
+    <h2>Flex-grow</h2>
+    <div class="container3">
+        <div>Harsha</div>
+        <div>Vardhan</div>
+        <div style="flex-grow: 6;">Reddy</div>
+        <div>Pidapa</div>
+    </div>
+    <hr>
+    <h2>Flex-shrink</h2>
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div style="flex-shrink: 0;">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <hr>
+    <h2>Flex-basis</h2>
+    <div class="container5">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 300px;">3</div>
+        <div>4</div>
+    </div>
+    <hr>
+    <h2>Align-self</h2>
+    <div class="container6">
+        <div>1</div>
+        <div style="align-self: center;">2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="./"></script>
+</head>
+
+<body>
+    <p id="one">Welcome to web development</p>
+
+    <script>
+        document.write("hello world");
+        console.log("good afternoon");
+        document.getElementById('one').innerHTML = "web development";
+        // alert('welcome');
+        function hello() {
+            document.write("Welcome to web development");
+        }
+        hello();
+        function multiply(number) {
+            console.log(number * number * number);
+        }
+        multiply(5);
+
+        function add() {
+            var x = 50;
+            console.log(x);
+        }
+        add();
+        // console.log(x + 30);
+        var x = 50;
+        function add() {
+            console.log(x);
+        }
+        add();
+        console.log(x + 30);
+
+        var a = "Web development";
+        var b = 20;
+        var c = 30;
+        var d = b + c;
+        var e = a + c
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(e);
+
+        let a1 = "Good afternoon";
+        let b1 = 40;
+        let c1 = 60;
+        console.log(a1);
+        console.log(b1);
+        console.log(c1);
+
+        const a2 = 10;
+        const b2 = 40;
+        console.log(a2 + b2);
+
+        let y = 80;
+        {
+            let y = 30;
+            console.log(y);
+        }
+
+        console.log(y);
+    </script>
+    <script src="./"></script>
+</body>
+
+</html>

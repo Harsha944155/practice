@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charitee</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #banner {
+            background-image: url('https://preview.colorlib.com/theme/charitee/assets/img/hero/h1_hero1.jpg.webp');
+            background-position: center center;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        #header {
+            background-color: rgb(38, 59, 92);
+            color: #ffff;
+            display: flex;
+            padding: 20px 0px;
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        #header button {
+            background-color: rgb(241, 91, 67);
+            color: #ffff;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        #header ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #header div:nth-child(1) {
+            text-align: center;
+            margin: auto 0px;
+            flex: 0.25;
+        }
+
+        #header div:nth-child(2) {
+            flex: 0.4;
+        }
+
+        #header span {
+            padding-bottom: 3px;
+            border-bottom: 1px dashed;
+        }
+
+        #header div:nth-child(3) {
+            display: flex;
+            flex: 0.35;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header i {
+            margin-right: 5px;
+        }
+
+        #contact-us {
+            background-color: rgb(249, 196, 52);
+            color: #ffff;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        #contact-us i {
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        #give-helping {
+            color: #fff;
+            padding: 160px 0px 160px 150px;
+        }
+
+        #give-helping h1 {
+            width: 45%;
+            line-height: 65px;
+            font-size: 70px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        #give-helping p {
+            font-size: 20px;
+            width: 40%;
+            line-height: 33px;
+            margin-bottom: 60px;
+        }
+
+        #give-helping a {
+            background-color: #65C9BB;
+            color: #ffff;
+            padding: 20px 30px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <div id="header">
+            <div>
+                <img src="https://preview.colorlib.com/theme/charitee/assets/img/logo/logo.png" />
+            </div>
+            <div>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./views/who-we-are.html">Who we are?</a></li>
+                    <li><a href="./views/programs.html">Programs</a></li>
+                    <li><a href="./views/about.html">About</a></li>
+                    <li><a href="./views/blog.html">Blog</a></li>
+                    <li><a href="./views/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Call us: <span>0 (78) 675 3674</span></h4>
+                <button><i class="fa-solid fa-heart"></i>Make A Donation</button>
+            </div>
+        </div>
+        <div id="give-helping">
+            <h1>Give a helping<br>hand to those<br>who need it!</h1>
+            <p>When a child gets access to good food, it<br>can change just about everything.</p>
+            <a href="./views/programs.html">Ongoing Programs</a>
+        </div>
+    </div>
+</body>
+
+</html>

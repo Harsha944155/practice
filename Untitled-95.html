@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #252525;
+            color: #fff;
+        }
+
+        .first-div {
+            display: flex;
+            gap: 50px;
+            margin-left: 100px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            margin-top: 50px;
+        }
+
+        p {
+            color: gray;
+            line-height: 1.8;
+            font-weight: 400;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style-type: none;
+            color: gray;
+            line-height: 1.8;
+            font-weight: 400;
+            font-size: 17px;
+        }
+
+        #icon {
+            color: #1ba12d;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #icon:hover {
+            color: #fff;
+        }
+
+        .second-div {
+            background-color: #333333;
+            padding: 50px;
+            position: relative;
+            bottom: 50px;
+            left: 55px;
+        }
+
+        input {
+            background-color: #484848;
+            border: none;
+            width: calc(96%);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            outline: none;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        ::placeholder {
+            font-size: 16px;
+        }
+
+        textarea {
+            background-color: #484848;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            color: #fff;
+            padding-top: 10px;
+        }
+
+        button {
+            background-color: #1ba12d;
+            border: none;
+            font-size: 14px;
+            border-radius: 5px;
+            color: #fff;
+            padding: 15px 70px;
+            margin-top: 10px;
+        }
+
+        .last-para {
+            margin-left: 110px;
+            margin-top: -200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-div">
+        <div>
+            <h1>ABOUT US</h1>
+            <p>A small river named Duden flows by<br> their place and supplies it with the<br> necessary regelialia.</p>
+            <i id="icon" class="fa-brands fa-twitter"></i>
+            <i id="icon" class="fa-brands fa-facebook-f"></i>
+            <i id="icon" class="fa-brands fa-instagram"></i>
+        </div>
+        <div>
+            <h1>SERVICES</h1>
+            <ul>
+                <li>Market Analysis</li>
+                <li>Accounting Advisor</li>
+                <li>General</li>
+                <li>Consultancy</li>
+                <li>Structured</li>
+                <li>Assestment</li>
+            </ul>
+        </div>
+        <div>
+            <h1>DISCOVER</h1>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Terms & Conditions</li>
+                <li>Policies</li>
+            </ul>
+        </div>
+        <div>
+            <h1>RESOURCES</h1>
+            <ul>
+                <li>Security</li>
+                <li>Global</li>
+                <li>Charts</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="second-div">
+            <h1>FREE CONSULTATION</h1>
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <input type="text" placeholder="Subject"><br>
+            <textarea rows="6" , cols="35" placeholder="Message"></textarea><br>
+            <button>Send A Message</button>
+        </div>
+    </div>
+    <p class="last-para">Copyright &copy;2024 All rights reserved</p>
+    <script src="https://kit.fontawesome.com/bb23ea113c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

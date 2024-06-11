@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=µ, initial-scale=1.0">
+    <title>Fox university</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .first-div {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+            margin-top: 30px;
+        }
+
+        .second-div {
+            display: flex;
+            justify-content: center;
+            gap: 500px;
+            background-color: #0D1128;
+            color: #fff;
+            height: 80px;
+            align-items: center;
+            width: 89%;
+            position: relative;
+            left: 75px;
+            margin-top: 20px;
+        }
+
+        .third-div {
+            background-image: url('https://preview.colorlib.com/theme/fox/images/bg_2.jpg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 1000px;
+            padding-left: 80px;
+            padding-top: 200px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        li:hover {
+            color: #fd5f00;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 38px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .first-para {
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .second-para {
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: 400;
+            color: #666666;
+        }
+
+        .first-sub-div {
+            display: flex;
+        }
+
+        #icon {
+            color: #fd5f00;
+            font-size: 20px;
+            margin-right: 10px;
+            position: relative;
+            top: 15px;
+        }
+
+        #icon2 {
+            font-size: 20px;
+            position: relative;
+            bottom: 0px;
+            right: 40px;
+            cursor: pointer;
+        }
+
+        .apply {
+            background: #fd5f00;
+            border: 1px solid #fd5f00;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .apply:hover {
+            color: #fd5f00;
+            background-color: #fff;
+        }
+
+        input {
+            width: calc(100% - 52px);
+            border: 1px solid #ddd;
+            background-color: #0D1128;
+            color: #fff;
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin-top: 5px;
+            margin-left: -20px;
+            font-weight: 100;
+        }
+
+        ::placeholder {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 50px;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 600;
+        }
+
+        .last-para {
+            color: #3c3b3b;
+            font-size: 18px;
+            margin-top: 30px;
+            font-weight: 500;
+        }
+
+        .contact {
+            background: #fd5f00;
+            border: 1px solid #fd5f00;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        #container {
+            position: relative;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-div">
+        <div>
+            <h1>FOX.</h1>
+            <p class="first-para">UNIVERSITY</p>
+        </div>
+        <div id="container" class="first-sub-div">
+            <div>
+                <i id="icon" class="fa-solid fa-paper-plane"></i>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p class="second-para">youremail@email.com</p>
+            </div>
+        </div>
+        <div class="first-sub-div">
+            <div>
+                <i id="icon" class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+                <h2>Call</h2>
+                <p class="second-para">Call Us: + 1235 2355 98</p>
+            </div>
+        </div>
+        <div>
+            <button class="apply">Apply now</button>
+        </div>
+    </div>
+    <div class="second-div">
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Courses</li>
+                <li>Staff</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" placeholder="Search"> <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="third-div">
+        <h3>Education Needs<br> Complete Solution</h3>
+        <p class="last-para">A small river named Duden flows by their place and supplies it with<br> the necessary
+            regelialia.</p>
+        <button class="contact">Contact Us</button>
+        <div>
+            <h3>University, College<br> School Education</h3>
+            <p class="last-para">A small river named Duden flows by their place and supplies it with<br> the necessary
+                regelialia.</p>
+            <button class="contact">Contact Us</button>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bb23ea113c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

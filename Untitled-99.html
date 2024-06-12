@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Review Carousel</title>
+    <style>
+        .review {
+            background: aqua;
+            height: auto;
+            width: 98%;
+            border-radius: 15px;
+            margin: auto;
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 5px 5px 5px #32917d;
+            align-items: center;
+        }
+
+        .review-items {
+            align-items: center;
+            justify-content: space-evenly;
+            width: 250px;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .review-items img {
+            height: 550px;
+            width: 1300px;
+            border-radius: 5px;
+            margin-left: 4px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 15px;
+        }
+
+        .review-button {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .review-button button {
+            color: #fff;
+            background: green;
+            font-weight: bold;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .review-items {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let rev = 0;
+        carousel(rev);
+
+        function previousReview() {
+            rev = rev - 1;
+            carousel(rev);
+        }
+
+        function nextReview() {
+            rev = rev + 1;
+            carousel(rev);
+        }
+
+        function carousel(review) {
+            let reviews = document.getElementsByClassName("review-items");
+
+            if (review >= reviews.length) {
+                review = 0;
+                rev = 0;
+            }
+            if (review < 0) {
+                review = reviews.length - 1;
+                rev = reviews.length - 1;
+            }
+            for (let i = 0; i < reviews.length; i++) {
+                reviews[i].style.display = "none";
+            }
+            reviews[review].style.display = "block";
+        }
+    </script>
+
+    <div class="review">
+        <div class="review-items">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/b656a7f4-4688-4997-bb7c-54b78793981e1658752386588-Western-Wear_Desk.jpg"
+                width="1000px" height="500px" class="slide" alt="image">
+        </div>
+
+        <div class="review-items">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/179e278f-77ee-44c2-bf39-9f00b0cd08e01658752429301-Handbags_Desk.jpg"
+                width="1000px" height="500px" class="slide" alt="image">
+        </div>
+
+        <div class="review-items">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg"
+                width="1000px" height="500px" class="slide" alt="image">
+        </div>
+        <div class="review-items">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/31/4031994d-9092-4aa7-aea1-f52f2ae5194f1654006594976-Activewear_DK.jpg"
+                width="1000px" height="500px" class="slide" alt="image">
+        </div>
+        <div class="review-items">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/6/27/53b4daed-cd2c-4111-86c5-14f737eceb351656325318973-Handbags_Desk.jpg"
+                width="1000px" height="500px" class="slide" alt="image">
+        </div>
+
+        <div class="review-button">
+            <button id="prev" onclick="previousReview()">
+                PREV
+            </button>
+
+            <button id="next" onclick="nextReview()">
+                NEXT
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

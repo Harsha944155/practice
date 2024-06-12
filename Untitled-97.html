@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 2 //integer
+        let num2 = 2.9 //floating number
+        let num3 = Infinity //Infinity
+        let num4 = 'Harsha' / 2; //NaN
+
+        console.log(num2);
+        console.log(num3);
+        console.log(num4);
+        console.log(num);
+
+        let str = 'Harsha';
+        let str2 = 'web development'
+
+        console.log(str);
+        console.log(str2);
+
+        let a = 10;
+        let b = 8;
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log(a++);
+        console.log(++a);
+        console.log(b--);
+        console.log(--b);
+
+        let x = 10;
+        let y = 8;
+
+        console.log(x == y);
+        console.log(x != y);
+        console.log(x !== y);
+        console.log(x > y);
+        console.log(x >= y);
+        console.log(x < y);
+        console.log(x <= y);
+
+        let c = 10;
+        let d = 8;
+        let e = 40;
+        let f = 50;
+
+        console.log(c > d & e > f);
+        console.log(c > d | e > f);
+        console.log(c > d ^ e > f);
+        console.log(~c);
+
+        let g = 10;
+        let h = 8;
+        let i = 40;
+        let j = 50;
+
+        console.log(g > h && i > j);
+        console.log(g > h || i < j);
+        console.log(!(g == h));
+
+        let k = 10;
+        let l = 8;
+
+        console.log(k += l);
+        console.log(k -= l);
+        console.log(k *= l);
+        console.log(k /= l);
+        console.log(k %= l);
+
+        var m = 10;
+        console.log("type of m:" + (typeof (m)));
+        var n = "web development";
+        console.log("type of n:" + (typeof (n)));
+        var o = '';
+        console.log("type of o:" + (typeof (o)));
+        var p = null;
+        console.log("type of p:" + (typeof (p)));
+
+        let number = 7;
+        if (number % 2 == 0) {
+            document.write('given number is even number');
+        }
+        if (number % 2 !== 0) {
+            document.write('given number is odd number');
+        }
+
+        let age = 13;
+        if (age >= 18) {
+            console.log("you are major");
+        } else {
+            console.log("you are not major");
+        }
+
+        const number2 = -3;
+        if (number2 > 0) {
+            console.log('given number is greater than 0');
+        } else if (number2 < 0) {
+            console.log('given number is lesser than 0');
+        } else {
+            console.log('given number is 0');
+        }
+
+        const marks = 40;
+        let branch;
+        switch (true) {
+            case marks >= 90:
+                branch = "CSE";
+                break;
+            case marks >= 80:
+                branch = "Mechanical";
+                break;
+            case marks >= 70:
+                branch = "ECE";
+                break;
+            case marks >= 60:
+                branch = "Civil";
+                break;
+            default: branch = "No admission";
+        }
+        document.write('branch' + branch);
+    </script>
+</body>
+
+</html>

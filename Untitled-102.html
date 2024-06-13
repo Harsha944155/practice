@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        //literal way
+        var stu = { rno: 101, name: "harsha", branch: "computers" };
+        document.write(stu.rno + " " + stu.name + " " + stu.branch);
+        //new keyboard
+        var stud = new Object()
+        stud.id = 102;
+        stud.name = "vardhan";
+        stud.branch = "BSC";
+        document.write(stud.id + " " + stud.name + " " + stud.branch);
+        //object constructor
+        function student(rno, name, branch) {
+            this.rno = rno;
+            this.name = name;
+            this.branch = branch;
+        }
+        var student1 = new student(103, "harsha vardhan", "degree");
+        document.write(student1.rno + " " + student1.name + " " + student1.branch);
+        var student2 = new student(104, "harshini", "MPC");
+        document.write(student2.rno + " " + student2.name + " " + student2.branch);
+        var student3 = new student(105, "harshitha", "BIPC");
+        document.write(student3.rno + " " + student3.name + " " + student3.branch);
+        var student4 = new student(106, "akshitha", "BZC");
+        document.write(student4.rno + " " + student4.name + " " + student4.branch);
+        var student5 = new student(107, "hema", "B.com");
+        document.write(student5.rno + " " + student5.name + " " + student5.branch);
+
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth();
+        let day = date.getDate();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        document.write(date);
+        document.write(year);
+        document.write(month);
+        document.write(day);
+        document.write(hours);
+        document.write(minutes);
+        document.write(seconds);
+
+
+        ///////
+        let date1 = new Date();
+        let formattedDate = new Intl.DateTimeFormat('en-US').format(date1);
+        document.write(formattedDate);
+        //month/date/year
+
+        //manipulation dates -->setDate()method
+        let date2 = new Date();
+        date2.setDate(date2.getDate() + 7);
+        document.write(date2);
+        //added 7 days extra
+
+        //year, month, day, hours, minutes, seconds, milliseconds
+        let A = new Date(2001, 0, 23, 10, 30, 30, 5);
+        document.write(A);
+
+        //scientific notation
+        let a = 156e5;
+        let b = 156e-5;
+        console.log(a);
+        console.log(b);
+        //Integer precision
+        //66.8 --->67
+        //66.3 --->66
+        //above 15 digits next round of number
+        let c = 66666666666
+        let d = 666666666666666;
+        console.log(c);
+        console.log(d);
+        let i = 1.22 + 3.44;
+        console.log(i);
+        //adding the two numbers
+        let j = 10;
+        let k = 20;
+        console.log(j + k);
+        //adding the strings
+        let e = "30";
+        let f = "40";
+        console.log(e + f);
+        //numeric string
+        let x = "1000" / "5";
+        console.log(x);
+        let y = "100" * "30";
+        console.log(y);
+        let z = "10000" - "9000";
+        console.log(z);
+        //in numeric string divison, multiplication, subtraction wilml work normally
+        //in numeric string addition will be like string only, beside output will come
+        let g = "100" + "100";
+        console.log(g);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        let x;
+        for (x = 2; x <= 4; x++) {
+            console.log("value of x")
+        }
+
+        const subjects = ["maths", "science", "social"];
+        let i = 0;
+        let len = subjects.length;
+        let sub = " ";
+        for (; i <= len;) {
+            sub += subjects[i];
+            i++;
+        }
+        console.log(sub);
+
+        var j = 1;
+        while (j <= 50) {
+            document.write(j);
+            j++;
+        }
+
+        var k = 10;
+        do {
+            document.write(k++);
+            k++;
+        }
+        while (k <= 50);
+
+        let names = [];
+        document.write(names);
+
+        let names1 = ['Harsha', 'Vardhan', 'Pidapa', 'Reddy'];
+        console.log(names1);
+
+        let harsha = new Array();
+        document.write(harsha);
+
+        let courses = new Array('html', 'css', 'javascript', 'react');
+        document.write(courses);
+
+        let arr = new Array(5);
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        document.write(arr);
+        document.write(courses[3]);
+        //accessing the array elements
+        let firstItem = courses[0];
+        document.write("First Item:", firstItem);
+        let lastItem = courses[courses.length - 1];
+        document.write("Last Item:", lastItem);
+        //modify the array
+        courses[3] = "angular";
+        document.write(courses);
+        //adding the elements - push, unshift
+        courses.push("Node js"); //at last element will be added in array
+        document.write(courses);
+        courses.unshift("My sql");
+        document.write(courses); //at first element will be added in array
+        //remove the elements - pop, shift, splice
+        let lastElement = courses.pop();
+        document.write("last element is removed:", courses); //at last element will be removed in array
+        let firstElement = courses.shift();
+        document.write("first element is removed:", courses); //at first element will be removed in array
+        courses.splice(1, 2);
+        document.write("after removing 2 elements from index:", courses);
+        let len2 = courses.length;
+        document.write("length of an array:", len2);
+        //iteration through an array
+        let laptops = ["hp", "dell", "lenovo", "acer"];
+        for (let a = 0; a <= laptops.length; a++) {
+            document.write(laptops[a])
+        }
+    </script>
+</body>
+
+</html>
